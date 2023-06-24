@@ -1,6 +1,6 @@
 # Restaurant-page
 
-Este proyecto de programación consiste en la creación de un sitio web para "El Bodegón Argentino", un comedor familiar ficticio. El sitio web presenta un diseño atractivo, construido completamente de forma dinámica utilizando, JavaScript y CSS modularizados.
+Este proyecto de programación consiste en la creación de un sitio web para "El Bodegón Argentino", un comedor familiar ficticio. El sitio web presenta un diseño atractivo, construido completamente de forma dinámica utilizando JavaScript y CSS modularizados.
 
 ## Características principales
 
