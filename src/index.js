@@ -1,6 +1,6 @@
 import {generateHeader} from './generateHeader.js';
 import {generateHero} from './generateHero.js';
-import {generateFooter} from './generateFooter.js';
+import {generateFooter, Branch} from './generateFooter.js';
 
 const body = document.querySelector('body');
 const content = document.createElement('div');
