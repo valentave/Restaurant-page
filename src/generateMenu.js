@@ -7,7 +7,7 @@ export function generateMenu() {
         <div class="menu__section">
             <div class="menu__meals menu__entrada">
                 <h3 class="menu__h3">Entradas</h3>
-                <div class="menu__meal">${displayMeal('Empanada','Carne / Pollo / Jamón y Queso / Verdura','$200')}</div>
+                <div class="menu__meal">${displayMeal('Empanada frita','Carne / Pollo / Jamón y Queso / Verdura','$200')}</div>
                 <div class="menu__meal">${displayMeal('Provoleta','Queso provolone a la parrilla','$1300')}</div>
                 <div class="menu__meal">${displayMeal('Chorizo criollo','100% cerdo','$500')}</div>
                 <div class="menu__meal">${displayMeal('Morcilla criolla','Acompañada de pan crocante de campo','$500')}</div>

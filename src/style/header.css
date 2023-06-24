@@ -1,4 +1,6 @@
 .header {
+    position: fixed;
+    width: 100%;
     background: var(--brown1);
     color: #fff;
     display: flex;
@@ -10,6 +12,7 @@
 .nav {
     display: flex;
     gap: 2vw;
+    margin-right: 30px;
 }
 
 .nav__button {

@@ -20,6 +20,12 @@
 
 .menu__meals {
     padding: 10px;
+    transition: background 0.25s;
+    border-radius: 20px;
+}
+
+.menu__meals:hover {
+    background: var(--brown3);
 }
 
 .menu__h3 {
