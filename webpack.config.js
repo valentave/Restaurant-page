@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -10,6 +11,9 @@ module.exports = {
       new HtmlWebpackPlugin({
           title: 'El bodegón Argentino',
       }),
+      new MiniCssExtractPlugin({
+        filename: 'style.css',
+      }),
     ],
     output: {
         filename: 'bundle.js',
@@ -19,8 +23,8 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.css$/i,
-          use: ['style-loader', 'css-loader'],
+          test: /\.css$/,
+          use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
