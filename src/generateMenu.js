@@ -6,7 +6,7 @@ export function generateMenu() {
         <h2 class="menu__title">Nuestro Menú</h2>
         <div class="menu__section">
             <div class="menu__meals menu__entrada">
-                <h3 class="menu__h3">Entrada</h3>
+                <h3 class="menu__h3">Entradas</h3>
                 <div class="menu__meal">${displayMeal('Empanada','Carne / Pollo / Jamón y Queso / Verdura','$200')}</div>
                 <div class="menu__meal">${displayMeal('Provoleta','Queso provolone a la parrilla','$1300')}</div>
                 <div class="menu__meal">${displayMeal('Chorizo criollo','100% cerdo','$500')}</div>
@@ -57,7 +57,7 @@ export function generateMenu() {
                 <div class="menu__meal">${displayMeal('Spaghetti','Con crema. Incluye postre (bocha de helado)','$900')}</div>
                 <div class="menu__meal">${displayMeal('Tostados','Paleta y queso. Incluye postre (bocha de helado)','$1000')}</div>
             </div>
-            <div class="menu__meals menu__bebidas-sa>
+            <div class="menu__meals menu__bebidas-sa">
                 <h3 class="menu__h3">Bebidas sin alcohol</h3>
                 <div class="menu__meal">${displayMeal('Agua sin gas','1.5 litros','$400')}</div>
                 <div class="menu__meal">${displayMeal('Agua con gas','1.5 litros','$500')}</div>
@@ -73,6 +73,7 @@ export function generateMenu() {
                 <div class="menu__meal">${displayMeal('Vino espumante Chandon','750ml','$3500')}</div>
             </div>
             <div class="menu__meals menu__postres">
+            <h3 class="menu__h3">Postres</h3>
                 <div class="menu__meal">${displayMeal('Bocha de helado','Dulce de leche / chocolate / americana / frutilla','$300')}</div>
                 <div class="menu__meal">${displayMeal('Flan casero','Con crema o dulce de leche','$500')}</div>
                 <div class="menu__meal">${displayMeal('Queso y dulce','Dulce de batata o membrillo','$400')}</div>
@@ -88,6 +89,7 @@ export function generateMenu() {
 function displayMeal(meal, description, price) {
     return `
         <h4 class="menu__meal-name">${meal}</h4>
+        <div class="menu__separator"></div>
         <p class="menu__meal-description">${description}</p>
         <p class="menu__meal-price">${price}</p>
     `

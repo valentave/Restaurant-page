@@ -1,0 +1,39 @@
+.footer {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    padding: 15px;
+    gap: 25px;
+    background: var(--brown1);
+    color: white;
+}
+
+.branch-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.branch__city {
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-bottom: 1px solid var(--brown2);
+    padding-bottom: 5px;
+}
+
+.branch__address {
+    padding-top: 5px;
+}
+
+.branch__phone {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__credits {
+    display: flex;
+    justify-content: center;
+    gap: 1ch;
+}
+
+.footer__a > img {
+    height: 1rem;
+}

@@ -3,8 +3,18 @@ import {generateHero} from './generateHero.js';
 import {generateFooter} from './generateFooter.js';
 import {generateMenu} from './generateMenu.js';
 import {generateAboutUs} from './generateAboutUs.js';
-import './style.css';
-import './header.css';
+import icon from './Assets/favicon.svg'
+import './style/style.css';
+import './style/header.css';
+import './style/hero.css';
+import './style/footer.css';
+import './style/menu.css';
+import './style/aboutus.css';
+
+var favicon = document.createElement("link");
+favicon.rel = "icon";
+favicon.href = icon;
+document.head.appendChild(favicon);
 
 const body = document.querySelector('body');
 const content = document.createElement('div');
@@ -36,6 +46,7 @@ content.appendChild(footer);
 const btnHome = header.lastChild.querySelector('.nav__home');
 const btnMenu = header.lastChild.querySelector('.nav__menu');
 const btnAboutUs = header.lastChild.querySelector('.nav__about-us');
+const btnHeroMenu = hero.querySelector('.hero__button');
 
 // Initialize events
 btnHome.addEventListener('click', () => {
@@ -60,4 +71,9 @@ btnAboutUs.addEventListener('click', () => {
         if (!hero.classList.contains('hidden')) hero.classList.add('hidden');
         if (!menu.classList.contains('hidden')) menu.classList.add('hidden');
     }
+})
+
+btnHeroMenu.addEventListener('click', () => {
+    menu.classList.remove('hidden');
+    hero.classList.add('hidden');
 })

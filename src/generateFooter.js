@@ -1,4 +1,4 @@
-import gitHub from './github-mark.svg';
+import gitHub from './Assets/gitHub-mark.svg';
 
 export function generateFooter() {
     const element = document.createElement('footer');
@@ -26,9 +26,11 @@ export function generateFooter() {
                 <a class="branch__phone" href="tel: ${rosario.phone}">${rosario.phone}</a>
             </div>
         </div>
-        <p class="footer__p">Desarrollado por</p>
-        <a class="footer__a" href="https://github.com/valentave"><img src="${gitHubIcon.src}"></a>
-        <p class="footer__p">Valentín Taverna</p>
+        <div class="footer__credits">
+            <p class="footer__p">Desarrollado por</p>
+            <a class="footer__a" href="https://github.com/valentave"><img src="${gitHubIcon.src}"></a>
+            <p class="footer__p">Valentín Taverna</p>
+        </div>
     `;
     return element
 }
